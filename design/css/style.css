@@ -1,0 +1,44 @@
+body, html, h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 250px;
+  width: 260px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.chart-wrapper .legends{
+  position: absolute;
+  right: -127px;
+  top: 25px;
+  font-size: 12px;
+}
+.chart-wrapper .legends div{
+  margin-left: 12px;
+}
+.chart-wrapper .legends .aMeta:before,
+.chart-wrapper .legends .aAlerta:before,
+.chart-wrapper .legends .aFmeta:before{
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  left: 0;
+}
+.chart-wrapper .legends .aMeta:before{
+  background: #00a65a;
+  top: 1px;
+}
+.chart-wrapper .legends .aAlerta:before{
+  background: #f39c12;
+  top: 31px;
+}
+.chart-wrapper .legends .aFmeta:before{
+  background: #f56954;
+  top: 16px;
+}
